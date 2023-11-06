@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: transparent linear-gradient(180deg, #281EFF 20%, #2DFF8C 80%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section {
+
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+h1 {
+    font: 10em Satisfy;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+
+}
+
+h2 {
+
+    font: normal normal normal 32px/38px Varela Round;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 20px;
+
+}
+
+p {
+
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+
+.forme {
+    display: block;
+    width: 100vw;
+    margin: 40px;
+    direction: rtl;
+    text-align: right;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name,
+.email {
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+button,
+label {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+
+
+}
+
+
+input {
+    height: 50px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    width: 418px;
+
+
+
+}
+
+button {
+
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    color: #1C1C1C;
+    width: 206px;
+    height: 50px;
+    margin-top: 15px;
+
+}
+
+@media screen and (max-width:900px) {
+
+
+    body {
+        height: 100vh;
+
+    }
+
+    section {
+        overflow: hidden;
+        margin: 0;
+
+    }
+
+    h1 {
+        font: 4em Satisfy;
+
+
+    }
+
+    h2 {
+        font: 1em Varela Round;
+    }
+
+
+
+    p,
+    h1,
+    h2 {
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    P {
+        font: 0.8em Varela Round;
+        width: 85vw;
+        margin-left: 22px;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+    button {
+        width: 80vw;
+    }
+
+    input {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,34 @@
+# Portfolio Project README
+
+## Project Overview
+
+This portfolio project showcases a collection of six landing pages created using HTML, CSS, and Bootstrap. Each landing page is designed to highlight various skills and aspects of web development. This README provides an overview of the project, its structure, and how to navigate the different landing pages.
+
+## Project Structure
+
+The project is organized as follows:
+
+- **index.html**: This is the main entry point to the portfolio project. It serves as the homepage with links to the individual landing pages.
+- **Styles**: This directory contains the CSS stylesheets for the project.
+- **images**: Store all the images and assets used in the landing pages here.
+- **Projects**: This directory contains subdirectories for each of the six landing pages, each with its HTML and CSS files.
+
+## Landing Pages
+
+The portfolio includes six landing pages, each focusing on different aspects of web development and design. Here's a brief description of each landing page:
+
+1. **Home/Portfolio**: The main landing page (index.html) with links to the other pages and Showcase your projects, work, or case studies.
+
+2. **About Me**: Share your personal and professional background.
+
+3. **Selected Projects**: A page to display your blog posts or articles.
+
+4. **Contact**: Provide contact information and a way for visitors to reach out to you.
+
+## Technologies Used
+
+The project is built using the following technologies:
+
+- **HTML**: For structuring the content of the pages.
+- **CSS**: For styling and layout.
+- **Bootstrap**: For responsive design and pre-built components.

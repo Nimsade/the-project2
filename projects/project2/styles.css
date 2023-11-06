@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+}
+
+section {
+    display: block;
+    text-align: center;
+    margin-top: 250px;
+}
+
+
+h1 {
+
+    font: normal normal normal 160px/231px Satisfy;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    opacity: 1;
+
+}
+
+h2 {
+
+    font: normal normal normal 32px/38px Varela Round;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin: 20px;
+
+}
+
+p {
+
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+}
+
+form {
+
+    display: block;
+    display: flex;
+    display: grid;
+    grid-template-columns: 418px 418px 206px;
+    grid-template-rows: repeat(2, 1fr);
+    direction: rtl;
+    text-align: center;
+    margin-right: 420px;
+
+
+}
+
+label {
+    display: grid;
+    display: flex;
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.label_name {
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+.input_name {
+    display: block;
+    grid-row: 2/2;
+    grid-column: 1/2;
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.label_email {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.input_email {
+    display: block;
+    grid-row: 2/2;
+    grid-column: 2/3;
+    display: flex;
+    margin-left: 20px;
+}
+
+input {
+    display: grid;
+    height: 50px;
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+    width: 418px;
+
+
+
+}
+
+button {
+    display: block;
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    letter-spacing: 0px;
+    color: #1C1C1C;
+    opacity: 1;
+    grid-row: 2/2;
+    grid-column: 3/3;
+}

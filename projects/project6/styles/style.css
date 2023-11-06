@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box_top {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FDBD03;
+    width: 434px;
+    height: 18px;
+}
+
+
+.whatsapp {
+    display: block;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.facebook,
+.email,
+.linkedin,
+.phone {
+    position: relative;
+    display: block;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    bottom: 50px;
+    margin-left: 20px;
+}
+
+.facebook {
+    left: 20px;
+}
+
+.email {
+    left: 40px;
+}
+
+.linkedin {
+    left: 60px;
+}
+
+.phone {
+    left: 80px;
+}
+
+.contact {
+    display: block;
+    display: flex;
+    position: relative;
+}
+
+.whatsapp img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+}
+
+.facebook img,
+.email img,
+.linkedin img,
+.phone img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    bottom: -13px;
+
+}
+
+
+.container_text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 266px, 266px, 266px;
+
+
+
+}
+
+.photo {
+    grid-row: 1/4;
+    grid-column: 1/1;
+    margin-left: 166px;
+}
+
+.photo img {
+    width: 30vw;
+    height: 70vh;
+    margin-top: 60px;
+}
+
+.container_text h1 {
+    text-align: justify;
+    font: normal normal 900 66px/97px Heebo;
+    letter-spacing: 0px;
+    color: #FDBD03;
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.container_text p {
+    display: block;
+    text-align: left;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+    opacity: 1;
+    width: 385px;
+    grid-row: 2/2;
+    grid-column: 2/2;
+    margin-bottom: 50px;
+}
+
+.forme {
+    display: flex;
+    justify-items: center;
+    width: 30vw;
+    height: 60vh;
+}
+
+.vart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.name,
+.email_form,
+.massege {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.forme label {
+    display: flex;
+    text-align: left;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+.forme input {
+    background-color: #E5EEFF;
+    width: 418px;
+    height: 50px;
+    border: none;
+    border-bottom: 5px solid #FDBD03;
+}
+
+.forme input[type=textarea] {
+
+    width: 854px;
+    height: 143px;
+}
+
+.forme input[type=button] {
+    width: 166px;
+    height: 50px;
+    background-color: #FDBD03;
+    text-align: center;
+    font: normal normal bold 22px/30px Heebo;
+    color: #000000;
+    opacity: 1;
+    margin-top: 50px;
+}
+
+.box_bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FDBD03;
+    width: 1038px;
+    height: 18px;
+}
+
+@media screen and (max-width:900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .box_bottom {
+        width: 95vw;
+    }
+
+
+    .photo img {
+        width: 20vw;
+        height: 15vh;
+        margin-right: 130px;
+
+    }
+
+    .container_text {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container_text h1 {
+        text-align: center;
+        font-size: 3em;
+        margin: 0 auto;
+    }
+
+    .container_text p {
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .forme {
+        margin-left: 40px;
+    }
+
+    .forme .vart {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .forme input[type=textarea],
+    .forme input[type=button],
+    .forme input {
+        width: 80vw;
+    }
+
+    .contact {
+        width: 70vw;
+    }
+
+    .facebook,
+    .email,
+    .linkedin,
+    .phone {
+        margin-top: 100px;
+    }
+
+    .box_bottom {
+        width: 100vw;
+    }
+}

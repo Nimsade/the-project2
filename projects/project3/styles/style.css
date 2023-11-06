@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    direction: rtl;
+
+}
+
+.coffee {
+    display: block;
+    border: 1px solid #707070;
+    border-bottom: none;
+}
+
+.container_text {
+    display: block;
+    display: flex;
+    height: 100vh;
+    width: 50vw;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: none;
+}
+
+.container_text h1 {
+    font: normal normal 900 43px/63px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 22px;
+
+}
+
+.container_text p {
+    text-align: justify;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+    opacity: 1;
+    width: 417px;
+    margin-bottom: 26px;
+}
+
+.forme {
+    display: flex;
+    flex-direction: column;
+}
+
+.forme label {
+    display: block;
+    display: flex;
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+
+
+}
+
+.forme input[type=text] {
+    display: block;
+    display: flex;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    width: 418px;
+    height: 50px;
+    border: none;
+    border-bottom: 5px solid #020253;
+    margin-bottom: 23px;
+
+}
+
+
+.forme input[type=button] {
+    text-align: center;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    opacity: 1;
+    background-color: #020253;
+    width: 166px;
+    height: 50px;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container_text {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    .container_text h1 {
+
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .container_text p {
+        width: 80vw;
+    }
+
+    .coffee {
+        display: flex;
+        flex-direction: column;
+        /*  background-image: url(../image/Coffee.png); */
+
+    }
+
+    .forme {
+        display: flex;
+        align-items: center;
+    }
+
+    .forme input[type=text],
+    .forme input[type=button] {
+        width: 286px;
+    }
+
+
+}

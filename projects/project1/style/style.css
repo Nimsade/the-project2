@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent url(../image/Path_15.png) 0% 0% no-repeat padding-box;
+    height: 50vh;
+}
+
+.container_box {
+    width: 30vw;
+    height: 70vh;
+    background-color: #1A1A1AD4;
+    margin-left: 1050px;
+    margin-top: 200px;
+}
+
+.container_text h1 {
+    font: normal normal 900 36px/53px Heebo;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container_text p {
+    text-align: center;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    width: 400px;
+    height: 58px;
+    margin: 20px;
+    margin-left: 70px;
+}
+
+.forme {
+    margin: 50px;
+    padding: 50px;
+}
+
+.name,
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+
+}
+
+label {
+    display: flex;
+    justify-content: left;
+    font: normal normal bold 16px/24px Heebo;
+    color: #FFFFFF;
+    text-align: left;
+
+}
+
+input {
+    background-color: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D31C75;
+    width: 418px;
+    height: 50px;
+
+}
+
+input[type=button] {
+    display: flex;
+    background-color: #D31C75;
+    width: 166px;
+    height: 50px;
+    font: normal normal bold 22px/30px Heebo;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+@media screen and (max-width:900px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-size: 100% 80%;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+
+    }
+
+    .container_box {
+        display: flex;
+        background-color: #1A1A1AD4;
+        width: 80vw;
+        height: 80vh;
+        margin: 0;
+        margin-top: 120px;
+        overflow: hidden;
+
+    }
+
+    .container_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+        width: 80vw;
+
+    }
+
+    .container_text h1 {
+        width: 50vw;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .container_text p {
+        display: flex;
+        width: 70vw;
+        margin-right: 70px;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .name,
+    .email {
+        margin: 30px;
+    }
+
+    input {
+        width: 65vw;
+        height: 5vh;
+    }
+
+    input[type=button] {
+        width: 25vw;
+        height: 5vh;
+        margin-left: 25px;
+    }
+}

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url(../image/Path_15.png);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container_header h1 {
+    display: block;
+    display: flex;
+    text-align: center;
+    font: normal normal bold 86px/113px Assistant;
+    letter-spacing: 0px;
+    color: #D3E10E;
+    opacity: 1;
+    justify-content: center;
+    margin: 23px;
+
+}
+
+.container_header p {
+    display: flex;
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    width: 40vw;
+    align-self: center;
+
+}
+
+.forme {
+    display: block;
+    display: flex;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.fullname {
+    display: flex;
+    flex-direction: column;
+}
+
+.forme label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font: normal normal bold 16px/21px Assistant;
+    letter-spacing: 0px;
+    color: #011560;
+    opacity: 1;
+    border: none;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.forme input[type=text] {
+    width: 418px;
+    height: 50px;
+    background: #F6F6F6;
+    border: none;
+    border-bottom: 5px solid #D3E10e;
+    margin-right: 31px;
+
+}
+
+.forme input[type=button] {
+    width: 166px;
+    height: 50px;
+    background-color: #D3E10E;
+    text-align: center;
+    font: normal normal bold 22px/30px Assistant;
+    letter-spacing: 0.33px;
+    color: #011560;
+    opacity: 1;
+    margin-top: 22px;
+    border-left: 5px solid #D3E10e;
+    border-right: 5px solid #D3E10e;
+    border: none;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        background-image: url(../image/Path_15.png);
+        background-size: 100% 90%;
+
+    }
+
+    .container_header h1 {
+        font-size: 2.2em;
+    }
+
+    .container_header p {
+        text-align: center;
+        width: 90vw;
+    }
+
+    .forme {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .forme input[type=text],
+    .forme input[type=button] {
+        margin: 20px;
+        width: 80vw;
+    }
+
+}
