@@ -86,9 +86,10 @@
 
 
 .about-container img {
-    width: 141px;
-    height: 139px;
-
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    box-shadow: 3px 3px 3px #000;
 }
 
 .about-container button {
