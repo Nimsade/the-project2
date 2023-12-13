@@ -16,9 +16,9 @@ function squareClick() {
 	if (gamePlay.win) {
 		let squares = document.querySelectorAll(".square");
 
-		squares[gamePlay.pos[0]].style.color = "blue";
-		squares[gamePlay.pos[1]].style.color = "blue";
-		squares[gamePlay.pos[2]].style.color = "blue";
+		squares[gamePlay.pos[0]].style.color = "#62068d";
+		squares[gamePlay.pos[1]].style.color = "#62068d";
+		squares[gamePlay.pos[2]].style.color = "#62068d";
 		document.getElementById(
 			"result"
 		).innerHTML = `${this.textContent} is the winner`;
