@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 25%;
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	background-image: url(../image/kartinki-na-zadnij-fon-46.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+}
+
+#openArrow {
+	margin: 0 auto;
+	position: relative;
+	top: 500px;
+	left: 10px;
+	cursor: pointer;
+}
+#closeArrow {
+	margin: 0 auto;
+	position: absolute;
+	top: 500px;
+	right: 10px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		width: 70%;
+	}
+}

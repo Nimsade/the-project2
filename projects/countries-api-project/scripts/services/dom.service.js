@@ -36,6 +36,12 @@ const createCard = (country) => {
 	population.className = "card-text";
 	population.textContent = `population: ${country.population}`;
 
+	const region = document.createElement("p");
+	region.className = "card-text ";
+	region.textContent = `region: ${country.region}`;
+
+	
+
 	const cardFooter = document.createElement("div");
 	cardFooter.className = "card-footer d-flex justify-content-center";
 
@@ -60,10 +66,12 @@ const createCard = (country) => {
 
 	card.appendChild(cardImg);
 
+	card.appendChild(cardBody);
+
 	cardBody.appendChild(cardTitle);
 	cardBody.appendChild(population);
-
-	card.appendChild(cardBody);
+	cardBody.appendChild(region);
+	
 
 	cardFooter.appendChild(heart);
 	card.appendChild(cardFooter);
@@ -71,10 +79,11 @@ const createCard = (country) => {
 	cards.appendChild(card);
 };
 
-const createCardsList = async () => {
-	for (const item of countries) {
+const createCardsList = (data = countries) => {
+	cards.innerHTML = "";
+	for (const item of data) {
 		createCard(item);
 	}
 };
 
-export { createCardsList };
+export { createCardsList, createCard };

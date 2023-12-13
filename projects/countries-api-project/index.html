@@ -21,14 +21,64 @@
 			<h1 class="text-light p-5 text-center">Countries Of The World</h1>
 		</div>
 
-		<h4 class="text-light p-5 text-center p-4">Search</h4>
-		<div class="m-auto mt-2 d-flex justify-content-center col-sm-12 col-md-6">
+		<h4 class="text-light m-4 text-center">Search</h4>
+		<div class="m-auto mb-2 d-flex justify-content-center col-sm-10 col-md-4">
 			<input type="text" id="search" class="form-control" />
+			<div class="dropdown">
+				<button
+					class="btn btn-secondary dropdown-toggle mx-2 text-info"
+					type="button"
+					id="dropdownMenuButton"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				>
+					<i class="fa fa-sort fa-lg"></i>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<button
+						id="sortAZButton"
+						class="dropdown-item"
+						type="button"
+						onclick="sortAZ()"
+					>
+						A-Z
+					</button>
+
+					<button
+						id="sortZAButton"
+						class="dropdown-item"
+						type="button"
+						onclick="sortZA()"
+					>
+						Z-A
+					</button>
+
+					<button
+						id="sortPopulationButton"
+						class="dropdown-item"
+						type="button"
+						onclick="sortPopulationDesc()"
+					>
+						Population: highest first
+					</button>
+
+					<button
+						id="sortPopulationLowButton"
+						class="dropdown-item"
+						type="button"
+						onclick="sortPopulationLow()"
+					>
+						Population: lowest first
+					</button>
+				</div>
+			</div>
 		</div>
 
-		<div id="cards" class="container d-flex flex-wrap justify-content-center">
-			
-		</div>
+		<div
+			id="cards"
+			class="container d-flex flex-wrap justify-content-center"
+		></div>
 
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -45,6 +95,6 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
-		<script src="./scripts/main.js" type="module"></script>
+		<script src="./scripts/main.js" type="module" defer></script>
 	</body>
 </html>

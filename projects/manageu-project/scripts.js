@@ -28,7 +28,11 @@ window.updateTaskManager = function (taskId) {
 	}
 };
 window.completedTaskManager = function (taskId) {
-    if()
+	let completedTask = (completedTaskManager = true);
+	if (completedTask == false) {
+		manager.completedTask(taskId);
+		showTasksCompleted();
+	}
 };
 
 function showTasks() {
@@ -55,6 +59,25 @@ function showTasks() {
 		`;
 	}
 }
-
+function showTasksCompleted() {
+	document.getElementById("Completed").innerHTML = "";
+	for (let task of manager.tasks){
+		if (task.completedTask) {
+		document.getElementById(
+			"Completed"
+		).innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
+    ${task.taskDescription}
+    <div class="d-flex justify-content-end align-items-center">
+        <div style="margin-bottom: 1px;">
+            <i style="cursor: pointer; color: #b12525;" onclick="deleteTaskFromManager(${task.id})">
+                <i class="fa-solid fa-trash-can"></i>
+            </i>
+        </div>
+    </div>
+</li>`;
+	}
+}
+}
 let manager = new TaskManager();
 showTasks();
+showTasksCompleted();

@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+    background-color: rgb(125, 251, 255);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+	
+}
+
+.tictactoe {
+	background-color: #000;
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center;
+	
+}
+
+.tictactoe .square {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(209, 70, 15);
+	background-color: #a1fc6c;
+	width: calc(33% - 4px);
+	height: calc(33% - 4px);
+	margin: 2px;
+    padding-bottom: 100px;
+}
