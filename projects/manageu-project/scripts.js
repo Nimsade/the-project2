@@ -44,7 +44,7 @@ function showTasks() {
     ${task.taskDescription}
     <div class="d-flex justify-content-end align-items-center">
     <div style="margin-right: 10px;"onclick="completedTaskManager(${task.id})">
-    <i class="fa-solid fa-circle-check" style="color: #40cc24;cursor: pointer"></i>
+    <i class="fa-solid fa-circle-check"id="vBtn" style="color: #40cc24;cursor: pointer"></i>
     </div>
         <div style="margin-right: 10px;"onclick="updateTaskManager(${task.id})">
             <i class="fa-solid fa-file-pen" style="cursor: pointer; color: #0000e1;"></i>
@@ -61,11 +61,11 @@ function showTasks() {
 }
 function showTasksCompleted() {
 	document.getElementById("Completed").innerHTML = "";
-	for (let task of manager.tasks){
+	for (let task of manager.tasks) {
 		if (task.completedTask) {
-		document.getElementById(
-			"Completed"
-		).innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
+			document.getElementById(
+				"Completed"
+			).innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
     ${task.taskDescription}
     <div class="d-flex justify-content-end align-items-center">
         <div style="margin-bottom: 1px;">
@@ -75,8 +75,8 @@ function showTasksCompleted() {
         </div>
     </div>
 </li>`;
+		}
 	}
-}
 }
 let manager = new TaskManager();
 showTasks();
