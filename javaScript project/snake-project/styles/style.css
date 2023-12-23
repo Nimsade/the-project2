@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Satisfy&family=Shadows+Into+Light&family=Silkscreen&family=Varela+Round&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: aquamarine;
+}
+.headline {
+	font-size: 5rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-family: Silkscreen;
+	font-weight: bold;
+	color: orange;
+	margin-bottom: 15px;
+}
+.game_score {
+	font-size: 1.8rem;
+	font-family: Silkscreen;
+	color: red;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	margin: 15px;
+}
+.game_board {
+	width: 50vw;
+	height: 80vh;
+	background-color: rgb(9, 159, 9);
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+}
+
+.game_board .head {
+	width: 90%;
+	height: 90%;
+	border: 1px solid #000;
+	background: rgb(217, 171, 7);
+}
+
+#wrapper {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+
+#popup {
+	font-family: Silkscreen;
+	display: flex;
+	text-align: center;
+	width: 30%;
+	height: 40%;
+	margin: 20% auto;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #c2c22a;
+	line-height: 1;
+	position: relative;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+#content {
+	font-size: 2.8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(255, 75, 75);
+}
+#content #resetBtn {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	height: 30%;
+	margin-top: 30px;
+	align-items: center;
+	font-family: Silkscreen;
+	color: red;
+	background-color: #c5e60a;
+	font-size: 1.8rem;
+}
+#content #resetBtn:hover {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+	background-color: red;
+	color: #c5e60a;
+}

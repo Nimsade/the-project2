@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(238, 177, 96) !important;
+}
+
+li {
+	border: 1px solid #000 !important;
+	font-size: 1.5rem !important;
+}
