@@ -124,8 +124,7 @@
 	overflow: hidden;
 	font-weight: bold;
 	font-size: 3rem;
-	 text-decoration-line: underline;
-
+	text-decoration-line: underline;
 }
 
 .card-title {
@@ -159,7 +158,6 @@
 	flex-direction: column;
 	overflow: hidden;
 	position: static;
-
 }
 
 .box-container {
@@ -179,9 +177,7 @@
 	margin: 20px;
 }
 
-
-
-.js-container{
+.js-container {
 	display: flex;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -370,4 +366,5 @@ input[type="button"]:hover {
 
 	.contact-details img {
 		width: 60%;
-	}}
+	}
+}
