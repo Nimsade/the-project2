@@ -7,15 +7,16 @@ function createTaskElement(action) {
 	const listItem = document.createElement("li");
 	listItem.className = "list-group-item active d-flex justify-content-between";
 	listItem.textContent = action.description;
-	listItem.style.backgroundColor = "rgb(101, 111, 114)";
+	listItem.style.backgroundColor = "#A0A0A0";
 
 	const box = document.createElement("div");
 	box.className = "box ";
 	box.style.cursor = "pointer";
-	
 
 	if (action.completed) {
 		listItem.style.textDecoration = "line-through";
+		listItem.style.color = "black";
+		listItem.style.backgroundColor = "#319705";
 	} else {
 		const checkIcon = document.createElement("i");
 		checkIcon.className = "fa-solid fa-check fa-beat";

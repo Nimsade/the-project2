@@ -24,6 +24,7 @@ window.deleteActionFromManager = function (actionId) {
 window.updateActionInManager = function (actionId) {
 	let newAmount = prompt("Please enter new amount: ");
 	if (newAmount == null || newAmount == "") alert("something went wrong");
+	else if (newAmount != Number) alert("please input a mumber");
 	else {
 		manager.updateAction(actionId, +newAmount);
 		showActionsInTable();
